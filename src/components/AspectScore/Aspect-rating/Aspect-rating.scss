@@ -1,0 +1,28 @@
+@import "../../../variables";
+
+.aspect-score {
+    color: $font-color;
+    padding: 5%;
+    width: 50%;
+    background-color: white;
+    margin-bottom: 15rem;
+    .aspect-score-donut {
+        position: relative;
+        display: box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 15%;
+        aspect-ratio: 1/1;
+        svg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        p {
+            font-size: 2cqi;
+        }
+    }
+}

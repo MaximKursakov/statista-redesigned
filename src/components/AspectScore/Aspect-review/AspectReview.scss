@@ -1,0 +1,20 @@
+.aspect-review {
+    background-color: white;
+    padding: 5%;
+    width: 30%;
+    aspect-ratio: 1/1;
+    .review-bar {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row-reverse;
+        height: 100%;
+        .star {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            svg {
+            }
+        }
+    }
+}

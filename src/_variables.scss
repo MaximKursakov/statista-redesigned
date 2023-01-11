@@ -1,0 +1,14 @@
+$primary: #583df5;
+$secondary: #0cc0f0;
+$gradient: linear-gradient(45deg, $primary, $secondary);
+$background: #f6f8fa;
+$font-color: #6b6f7d; 
+$grey: #b3b3bc;
+
+$base-fontsize: 16px;
+$scale: 1.333;
+$h5: calc($base-fontsize * $scale);
+$h4: calc($h5 * $scale);
+$h3: calc($h4 * $scale);
+$h2: calc($h3 * $scale);
+$h1: calc($h2 * $scale);

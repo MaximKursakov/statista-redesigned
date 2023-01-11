@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import "./_variables.scss";
+
+body {
+    margin: 0;
+    font-family: raleway;
+    overflow-x: hidden;
+}
+
+.App {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f6f8fa;
+    color: #6b6f7d;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, p, button {
+    margin: 0;
+    font-family: Roboto;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 400;
+    padding-bottom: 5%;
+}
+
+
