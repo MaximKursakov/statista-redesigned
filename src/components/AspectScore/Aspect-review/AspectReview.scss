@@ -1,0 +1,23 @@
+@import "../../../variables";
+
+.aspect-review {
+    background-color: white;
+    padding: 15%;
+    width: auto;
+    color: $font-color;
+    .review-bar {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        aspect-ratio: 1/1;
+        .star {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            svg {
+                margin: .5rem 0;
+            }
+        }
+    }
+}

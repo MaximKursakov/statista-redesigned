@@ -1,0 +1,49 @@
+@import "../../variables";
+
+$icon-padding: 1em;
+
+.sidebar {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+    .logout {
+        margin-bottom: 2rem;
+    }
+    .sidebar__nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: calc($icon-padding * 3);
+    }
+    .sidebar__section {
+        font-size: 1.5rem;
+        color: $grey;
+        a {
+            margin-left: calc($icon-padding - .5em);
+            padding: $icon-padding 1.5em $icon-padding $icon-padding;
+        }
+    }
+    .logo {
+        margin-top: 2rem;
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 600;
+        background: -webkit-linear-gradient(45deg, $primary, $secondary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    }
+    .active {
+        color: rgb(92, 92, 97);
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        background-color: $background;
+    }
+    a {
+        text-decoration: none;
+        color: $grey;
+    }
+}

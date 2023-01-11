@@ -1,0 +1,27 @@
+@import "../../../variables";
+
+.aspect-subscription {
+    background-color: white;
+    color: $font-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15% 5%;
+    img {
+        align-self: center;
+        width: 50%;
+        columns: $primary;
+    }
+    button {
+        cursor: pointer;
+        align-self: center;
+        background: $gradient;
+        border: none;
+        font-family: roboto;
+        color: white;
+        font-weight: 600;
+        padding: .5em 1.5em;
+        border-radius: 10px;
+        font-size: 1.4rem;
+    }
+}

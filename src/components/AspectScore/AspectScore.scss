@@ -1,0 +1,48 @@
+@import "../../variables";
+
+.main-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    margin: auto;
+    margin: 3% auto;
+    h1 {
+        padding-bottom: 0;
+        color: $font-color;
+    }
+    p {
+        padding: 2% 0 5% 0;
+    }
+}
+
+.main {
+    display: grid;
+    width: 100%;
+    margin: 0 auto;
+    grid-template-areas: 
+    "score review filter"
+    "period period subscription";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    gap: 3rem;
+    .aspect-score, .aspect-review, .filter, .aspect-period, .aspect-subscription {
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        }
+    .aspect-score {
+        grid: score;
+    }
+    .aspect-review {
+        grid-area: review;
+    }
+    .filter {
+        grid-area: filter;
+    }
+    .aspect-period {
+        grid-area: period;
+    }
+    .aspect-subscription {
+        grid-area: subscription
+    }
+}
