@@ -1,0 +1,48 @@
+@import "../../../variables";
+
+.filter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    .select-container {
+        height: 100%;
+        border-bottom: solid #e1e1ec .5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position: relative;
+        p {
+            color: $font-color;
+            position: absolute;
+            top: 0;
+            padding:5% 10%;
+            font-size: 1.2rem;
+        }
+        svg {
+            position: absolute;
+            right: 5%;
+            padding-top: 5%;
+            color: $primary;
+        }
+        select {
+            cursor: pointer;
+            z-index: 1;
+            background-color: transparent;
+        border: none;
+        font-family: roboto;
+        width: 100%;
+        height: 100%;
+        color: rgb(83, 82, 88);
+        padding:5% 10% 0 10%;
+        font-size: 1rem;
+        -webkit-appearance: none;
+            -moz-appearance: none;
+            text-indent: 1px;
+            text-overflow: '';
+        }
+
+        
+    }
+    
+}

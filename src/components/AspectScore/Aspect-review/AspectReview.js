@@ -10,10 +10,9 @@ export function AspectReview() {
     const star4 = Math.random()
     const star5 = Math.random()
     const total = star1 + star2 + star3 + star4+ star5
-    const [myState, setState] = useState()
+    
     return(
         <section className="aspect-review">
-            <button onClick={() => setState(Math.random())}> reroll</button>
             <h2>Reviews</h2>
             <div className="review-bar">
                 <ReviewLine rating={star5} stars={5}/>

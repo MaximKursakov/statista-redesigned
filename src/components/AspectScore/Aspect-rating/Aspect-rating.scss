@@ -2,17 +2,20 @@
 
 .aspect-score {
     color: $font-color;
-    padding: 5%;
-    width: 50%;
+    padding: 15%;
     background-color: white;
-    margin-bottom: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5%;
     .aspect-score-donut {
         position: relative;
         display: box;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 15%;
+        width: 80%;
         aspect-ratio: 1/1;
         svg {
             position: absolute;

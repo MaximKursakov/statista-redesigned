@@ -26,11 +26,13 @@ export const options = {
   responsive: true,
   scales: {
     x: {
+      display: true,
       grid: {
         display: false
       }
     },
     y: {
+      display: false,
       grid: {
         display: false
       }
@@ -38,6 +40,10 @@ export const options = {
   },
   plugins: {
     legend: {
+      font: {
+        size: 12,
+        family: "Roboto"
+    },
         display: false,
       position: 'top',
     },
@@ -48,11 +54,21 @@ export const options = {
   },
 };
 
-const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October'];
+const labels = ['January', 'February', 'March', 'April'];
 
 export const data = {
   labels,
   options: {
+    maintainAspectRatio: false,
+    scales:
+        {
+            y: {
+                grid: {
+                    drawBorder: false, // <-- this removes y-axis line
+                    lineWidth: 0.5,
+                }
+            }
+        },
     animations: {
       radius: {
         duration: 400,
@@ -64,7 +80,6 @@ export const data = {
 plugins: {
     legend: {
         labels: {
-            // This more specific font property overrides the global property
             font: {
                 size: 12,
                 family: "Roboto"
@@ -74,13 +89,14 @@ plugins: {
 },
   datasets: [
     {
-        fill: true,
-        backgroundColor: "#0cc0f0",
+      pointRadius: 0,
+        fill: false,
+        backgroundColor: "#583df5",
         hoverRadius: 12,
-        tension: 0.3,
+        tension: 0.5,
         label: 'Dataset 1',
-        data: labels.map(() => faker.datatype.number({ min: 0, max: 100 })),
-        borderColor: '#0cc0f0',
+        data: labels.map(() => faker.datatype.number({ min: 0, max: 50 })),
+        borderColor: '#583df5',
     },
   ],
 }

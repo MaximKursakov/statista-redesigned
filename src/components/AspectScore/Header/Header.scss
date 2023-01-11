@@ -1,0 +1,26 @@
+@import "../../../variables";
+
+.header {
+    .header-right, .header-left {
+        position: fixed;
+        top: 0;
+        padding: 2%;
+        display: flex;
+        width: 20%;
+        justify-content: space-around;
+        svg {
+            width: 35px;
+            height: 35px;
+            color: $font-color;
+            font-weight: 100;
+        }
+    }
+    .header-right {
+        right: 0;
+        
+    }
+    .header-left {
+        left: 5%;
+        width: auto;
+    }
+}

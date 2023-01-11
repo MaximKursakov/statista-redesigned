@@ -3,7 +3,7 @@
 $icon-padding: 1em;
 
 .sidebar {
-    position: sticky;
+    position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -31,8 +31,13 @@ $icon-padding: 1em;
         margin-top: 2rem;
         text-align: center;
         font-size: 3rem;
+        font-weight: 600;
+        background: -webkit-linear-gradient(45deg, $primary, $secondary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
     }
     .active {
+        color: rgb(92, 92, 97);
         border-top-left-radius: 50px;
         border-bottom-left-radius: 50px;
         background-color: $background;

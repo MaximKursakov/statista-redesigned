@@ -1,26 +1,48 @@
-.main {
-    width: 100%;
+@import "../../variables";
+
+.main-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: 100vh;
-    margin: 0 10%;
+    margin: auto;
+    margin: 3% auto;
+    h1 {
+        padding-bottom: 0;
+        color: $font-color;
+    }
+    p {
+        padding: 2% 0 5% 0;
+    }
+}
+
+.main {
     display: grid;
-    grid-area: 
+    width: 100%;
+    margin: 0 auto;
+    grid-template-areas: 
     "score review filter"
     "period period subscription";
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    gap: 3rem;
+    .aspect-score, .aspect-review, .filter, .aspect-period, .aspect-subscription {
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        }
     .aspect-score {
         grid: score;
     }
     .aspect-review {
-        grid: review;
+        grid-area: review;
     }
     .filter {
-        grid: filter;
+        grid-area: filter;
     }
     .aspect-period {
-        grid: period;
+        grid-area: period;
     }
     .aspect-subscription {
-        grid: subscription
+        grid-area: subscription
     }
 }

@@ -5,12 +5,14 @@ body {
     margin: 0;
     font-family: Roboto;
     overflow-x: hidden;
+    background-color: #f6f8fa;
 }
 
 .App {
-    display: flex;
     background-color: #f6f8fa;
+    display: flex;
     color: #6b6f7d;
+    width: 100vw;
 }
 
 a {
