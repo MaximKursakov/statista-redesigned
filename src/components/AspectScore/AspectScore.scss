@@ -1,4 +1,26 @@
 .main {
     width: 100%;
     height: 100vh;
+    margin: 0 10%;
+    display: grid;
+    grid-area: 
+    "score review filter"
+    "period period subscription";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    .aspect-score {
+        grid: score;
+    }
+    .aspect-review {
+        grid: review;
+    }
+    .filter {
+        grid: filter;
+    }
+    .aspect-period {
+        grid: period;
+    }
+    .aspect-subscription {
+        grid: subscription
+    }
 }

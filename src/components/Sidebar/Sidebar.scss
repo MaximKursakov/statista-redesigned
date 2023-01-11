@@ -3,6 +3,7 @@
 $icon-padding: 1em;
 
 .sidebar {
+    position: sticky;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
