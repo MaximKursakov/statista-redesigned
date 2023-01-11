@@ -13,6 +13,7 @@ export function AspectRating() {
                 </svg>
                 <p>{scoreNumber}%</p>
             </div>
+            <button>quality</button>
         </section>
     )
 }
