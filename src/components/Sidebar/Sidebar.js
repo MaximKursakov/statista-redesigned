@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BsSpeedometer2 } from 'react-icons/bs';
 import {MdOutlineCompare} from "react-icons/md"
 import {AiOutlineFieldTime, AiOutlineLogout } from "react-icons/ai"
@@ -6,13 +6,15 @@ import {BiAnalyse} from "react-icons/bi"
 import {TbListDetails} from "react-icons/tb"
 import {MdPublishedWithChanges} from "react-icons/md"
 import { NavLink } from 'react-router-dom';
-import {motion} from "framer-motion"
+import { motion, useAnimationControls } from "framer-motion"
 import "./Sidebar.scss"
   
 export function Sidebar () {
+  const controls = useAnimationControls()
   return (
     <>
-      <motion.nav className='sidebar'>
+      <motion.nav 
+      className='sidebar'>
         <div className='sidebar__section logo'>
             <p>R</p>
           </div >
@@ -47,6 +49,9 @@ export function Sidebar () {
             <AiOutlineLogout></AiOutlineLogout>
           </div>
       </motion.nav>
+      <motion.div initial={{width: "0px"}} animate={controls} className='sidebar-expand'>
+        test
+      </motion.div>
     </>
   );
 };

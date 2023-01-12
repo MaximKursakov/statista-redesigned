@@ -18,7 +18,8 @@
             position: absolute;
             top: 0;
             padding:5% 10%;
-            font-size: clamp(.5rem, 6cqi, 1.5rem);
+            font-weight: 300;
+            font-size: clamp(.5rem, 6cqi, 1.3rem);
         }
         svg {
             position: absolute;
@@ -37,7 +38,7 @@
         height: 100%;
         color: rgb(83, 82, 88);
         padding:5% 10% 0 10%;
-        font-size: clamp(.8rem, 8cqi, 1.8rem);
+        font-size: clamp(.5rem, 6cqi, 1.3rem);
         -webkit-appearance: none;
             -moz-appearance: none;
             text-indent: 1px;

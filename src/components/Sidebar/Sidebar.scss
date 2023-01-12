@@ -42,7 +42,9 @@ $icon-padding: 1em;
   background-color: $background;
   border-radius: 25px 0 0 25px;
   position: relative;
-        
+        svg {
+            color: $font-color;
+        }
     }
     .active::before {
         content: "";
