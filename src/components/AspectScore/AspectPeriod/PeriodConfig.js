@@ -26,7 +26,9 @@ export const options = {
   responsive: true,
     maintainAspectRatio: true,
     aspectRatio: 4,
+    
   scales: {
+    
     x: {
       display: true,
       grid: {
@@ -91,7 +93,6 @@ plugins: {
   datasets: [
     {
         pointRadius: 3,
-        fill: false,
         backgroundColor: "white",
         hoverRadius: 8,
         borderWidth: 3,

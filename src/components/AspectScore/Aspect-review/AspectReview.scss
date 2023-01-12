@@ -16,7 +16,11 @@
             justify-content: space-between;
             align-items: center;
             svg {
-                margin: .5rem 0;
+            }
+            p {
+                padding-top: 20%;
+                border-top: solid $grey 1px;
+                width: 100%;
             }
         }
     }

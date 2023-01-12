@@ -1,9 +1,9 @@
 import "./Filter.scss"
 import {BsChevronDown} from "react-icons/bs"
 
-export function Filter() {
+export function Filter({page, id}) {
     return (
-        <div className="filter">
+        <div className={`${page} filter${id}`}>
             <div className="select-container">
                 <p>Device</p>
             <select className="Device">

@@ -1,0 +1,37 @@
+.main-benchmark {
+    display: grid;
+    width: 100%;
+    margin: 0 auto;
+    grid-template-areas: 
+    "filter1 filter2"
+    "radar1 radar2"
+    "review1 review2";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 5%;
+    .filter-benchmark, .radar1, .radar2, .review1, .review2{
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        background-color: white;
+        }
+    .filter1 {
+        grid-area: filter1;
+    }
+    .filter2 {
+        grid-area: filter2;
+    }
+    .radar1 {
+        grid-area: radar1;
+    }
+    .radar2 {
+        grid-area: radar2;
+    }
+    .review1 {
+        grid-area: review1;
+    }
+    .review2 {
+        grid-area: review2;
+    }
+    p {
+        font-size: 1cqi;
+    }
+}
