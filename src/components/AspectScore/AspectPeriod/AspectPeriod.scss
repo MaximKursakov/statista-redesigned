@@ -5,16 +5,26 @@
     height: auto;
     background-color: white;
     color: $font-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    display: box;
     .timeline {
         display: flex;
         justify-content: space-between;
-        align-items: flex-start;
+        align-items: center;
+        padding-bottom: 2%;
+        > * {
+            padding-bottom: 0;
+        }
         select {
-            background-color: transparent;
+            background: $gradient;
+            border-radius: 5px;
+            padding: 0.5em 1.5em;
             font-family: roboto;
             border: none;
-            color: $font-color;
-            font-weight: 400;
+            color: white;
+            font-weight: 600;
         }
     }
 }

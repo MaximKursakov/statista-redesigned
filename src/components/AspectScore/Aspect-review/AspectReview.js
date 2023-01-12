@@ -13,7 +13,10 @@ export function AspectReview() {
     
     return(
         <section className="aspect-review">
-            <h2>Reviews</h2>
+            <div className="aspect-header">
+                <h2>Reviews</h2>
+                <p>total: 5284</p>
+            </div>
             <div className="review-bar">
                 <ReviewLine rating={star5} stars={5}/>
                 <ReviewLine rating={star4} stars={4}/>

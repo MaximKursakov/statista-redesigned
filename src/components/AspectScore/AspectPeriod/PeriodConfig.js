@@ -24,6 +24,8 @@ ChartJS.register(
 
 export const options = {
   responsive: true,
+    maintainAspectRatio: true,
+    aspectRatio: 4,
   scales: {
     x: {
       display: true,
@@ -59,13 +61,12 @@ const labels = ['January', 'February', 'March', 'April'];
 export const data = {
   labels,
   options: {
-    maintainAspectRatio: false,
     scales:
         {
             y: {
                 grid: {
-                    drawBorder: false, // <-- this removes y-axis line
-                    lineWidth: 0.5,
+                    drawBorder: false,
+                    lineWidth: 1,
                 }
             }
         },
@@ -89,12 +90,13 @@ plugins: {
 },
   datasets: [
     {
-      pointRadius: 0,
+        pointRadius: 3,
         fill: false,
-        backgroundColor: "#583df5",
-        hoverRadius: 12,
-        tension: 0.5,
-        label: 'Dataset 1',
+        backgroundColor: "white",
+        hoverRadius: 8,
+        borderWidth: 3,
+        tension: .6,
+        label: 'Aspect',
         data: labels.map(() => faker.datatype.number({ min: 0, max: 50 })),
         borderColor: '#583df5',
     },

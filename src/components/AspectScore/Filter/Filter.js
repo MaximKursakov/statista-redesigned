@@ -1,5 +1,5 @@
 import "./Filter.scss"
-import {BsChevronCompactDown} from "react-icons/bs"
+import {BsChevronDown} from "react-icons/bs"
 
 export function Filter() {
     return (
@@ -12,7 +12,7 @@ export function Filter() {
                 <option>Device2</option>
                 <option>Device3</option>
             </select>
-            <BsChevronCompactDown></BsChevronCompactDown>
+            <BsChevronDown></BsChevronDown>
             </div>
             <div className="select-container">
                 <p>Brand</p>
@@ -22,7 +22,7 @@ export function Filter() {
                 <option>Brand2</option>
                 <option>Brand3</option>
             </select>
-            <BsChevronCompactDown></BsChevronCompactDown>
+            <BsChevronDown></BsChevronDown>
             </div>
             <div className="select-container">
                 <p>Product</p>
@@ -32,7 +32,7 @@ export function Filter() {
                 <option>Product2</option>
                 <option>Product3</option>
             </select>
-            <BsChevronCompactDown></BsChevronCompactDown>
+            <BsChevronDown></BsChevronDown>
             </div>
         </div>
     )

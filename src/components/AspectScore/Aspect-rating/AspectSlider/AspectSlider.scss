@@ -1,0 +1,16 @@
+@import "../../../../variables";
+
+.aspect-slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    display: box;
+    button {
+        background-color: transparent;
+        border: none;
+    }
+    button, p {
+        font-size: 1cqi;
+    }
+}

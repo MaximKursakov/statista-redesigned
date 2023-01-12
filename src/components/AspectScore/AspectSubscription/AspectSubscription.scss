@@ -6,22 +6,35 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 15% 5%;
+    padding: 15%;
+    display: box;
     img {
         align-self: center;
-        width: 50%;
+        width: 60%;
         columns: $primary;
     }
+    .subscription-content {
+        padding: 10% 0;
+        h2 {
+            font-size: 1.2cqi;
+            font-weight: 600;
+        }
+        p {
+            font-size: .8cqi;
+        }
+    }
+    
     button {
+        white-space:nowrap;
         cursor: pointer;
-        align-self: center;
+        align-self: flex-start;
         background: $gradient;
         border: none;
         font-family: roboto;
         color: white;
-        font-weight: 600;
+        font-weight: 800;
         padding: .5em 1.5em;
         border-radius: 10px;
-        font-size: 1.4rem;
+        font-size: 1cqi;
     }
 }

@@ -7,15 +7,15 @@ import { AspectSubscription } from "./AspectSubscription/AspectSubscription"
 import { Filter } from "./Filter/Filter"
 
 export function AspectScore() {
-    const [myState, setState] = useState()
+    const [aspect, setAspect] = useState("Quality")
     return(
         <div className="main-container">
-            <h1>Aspect-based sentiment: BBQ</h1>
-            <p>Analyze your customers Ratings</p>
+            <h1 className="main-header">Aspect-based sentiment: BBQ</h1>
+            <p className="header-description">Analyze your customers Ratings</p>
         <div className="main">
-            <AspectRating/>
+            <AspectRating setAspect={setAspect}/>
             <AspectReview/>
-            <AspectPeriod/>
+            <AspectPeriod aspect={aspect}/>
             <Filter/>
             <AspectSubscription/>
         </div>

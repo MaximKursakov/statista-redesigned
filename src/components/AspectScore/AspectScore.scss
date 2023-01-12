@@ -1,19 +1,23 @@
 @import "../../variables";
 
 .main-container {
-    width: 50%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100vh;
     margin: auto;
     margin: 3% auto;
+    display: box;
+    padding: 5% 0;
     h1 {
+        font-size: 2cqi;
         padding-bottom: 0;
         color: $font-color;
     }
-    p {
-        padding: 2% 0 5% 0;
+    .header-description {
+        font-size: 1cqi;
+        padding: 1% 0 5% 0;
     }
 }
 
@@ -24,9 +28,9 @@
     grid-template-areas: 
     "score review filter"
     "period period subscription";
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto;
-    gap: 3rem;
+    gap: 5%;
     .aspect-score, .aspect-review, .filter, .aspect-period, .aspect-subscription {
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         }
@@ -44,5 +48,8 @@
     }
     .aspect-subscription {
         grid-area: subscription
+    }
+    p {
+        font-size: 1cqi;
     }
 }
