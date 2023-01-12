@@ -5,18 +5,17 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100vh;
     margin: auto;
-    margin: 0% 20% 0% 25%;
-    display: box;
+    margin: 0% 15% 0% 20%;
+    container-type: inline-size;
     padding: 5% 0;
     h1 {
-        font-size: 2cqi;
+        font-size: clamp(1.5rem, 6cqi, 3rem);
         padding-bottom: 0;
         color: $font-color;
     }
     .header-description {
-        font-size: 1cqi;
+        font-size: clamp(1rem, 4cqi, 2rem);
         padding: 1% 0 5% 0;
     }
 }
@@ -35,12 +34,12 @@
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         }
     .aspect-score {
-        grid: score;
+        grid-area: score;
     }
     .aspect-review {
         grid-area: review;
     }
-    .filter {
+    .filter-aspect {
         grid-area: filter;
     }
     .aspect-period {
@@ -49,7 +48,84 @@
     .aspect-subscription {
         grid-area: subscription
     }
-    p {
-        font-size: 1cqi;
+}
+
+@media screen and (max-width: 850px) {
+    .main.container {
+        padding-left: 5%;
     }
+    .main-aspect {
+        gap: 0;
+        grid-template-areas: 
+        "filter filter"
+        "score review"
+        "period period"
+        "subscription subscription";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto auto;
+        > * {
+            margin: 5%;
+        }
+        .aspect-review {
+        }
+        .filter-aspect {
+            display: flex;
+            flex-direction: row;
+            background-color: white;
+            .select-container {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                position: relative;
+                container-type: inline-size;
+                p {
+                    color: $font-color;
+                    position: absolute;
+                    top: 10%;
+                    left: 10%;
+                    font-size: clamp(.5rem, 6cqi, 1.5rem);
+                }
+                svg {
+                    position: absolute;
+                    color: $primary;
+                    right: 5%;
+                    top: 0;
+                    bottom: 0;
+                    margin: auto 0;
+                }
+                select {
+                    padding:20% 10%;
+                    width: 100%;
+                    cursor: pointer;
+                    z-index: 1;
+                    background-color: transparent;
+                    border: none;
+                    border-right: solid #e1e1ec .5px;
+                    font-family: roboto;
+                    font-weight: 500;
+                    color: rgb(83, 82, 88);;
+                    font-size: clamp(.8rem, 8cqi, 1.8rem);
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    text-indent: 1px;
+                    text-overflow: '';
+                }
+        
+                
+            }
+            
+        }
+        .aspect-subscription {
+            padding: 10%;
+            img {
+                width: 50%;
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: 850px) {
+
 }

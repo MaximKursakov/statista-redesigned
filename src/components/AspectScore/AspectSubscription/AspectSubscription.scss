@@ -7,7 +7,7 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 15%;
-    display: box;
+    container-type: inline-size;
     img {
         align-self: center;
         width: 60%;
@@ -16,11 +16,11 @@
     .subscription-content {
         padding: 5% 0;
         h2 {
-            font-size: 1.2cqi;
+            font-size: clamp(1rem, 10cqi, 1.8rem);
             font-weight: 600;
         }
         p {
-            font-size: .8cqi;
+            font-size: clamp(.7rem, 6cqi, 1.3rem);
         }
     }
     
@@ -35,6 +35,6 @@
         font-weight: 800;
         padding: .5em 1.5em;
         border-radius: 10px;
-        font-size: 1cqi;
+        font-size: clamp(.7rem, 6cqi, 1.5rem);
     }
 }

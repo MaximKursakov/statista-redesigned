@@ -35,3 +35,21 @@
         font-size: 1cqi;
     }
 }
+
+@media screen and (max-width: 850px) {
+    .main-benchmark {
+        gap: 0;
+        grid-template-areas: 
+        "filter1"
+        "filter2"
+        "radar1"
+        "radar2"
+        "review1"
+        "review2";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto;
+        .radar1, .review1 {
+            margin: 10% 0;
+        }
+    }
+}

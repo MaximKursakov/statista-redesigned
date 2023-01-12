@@ -12,12 +12,13 @@
         flex-direction: column;
         justify-content: space-around;
         position: relative;
+        container-type: inline-size;
         p {
             color: $font-color;
             position: absolute;
             top: 0;
             padding:5% 10%;
-            font-size: 1rem;
+            font-size: clamp(.5rem, 6cqi, 1.5rem);
         }
         svg {
             position: absolute;
@@ -36,7 +37,7 @@
         height: 100%;
         color: rgb(83, 82, 88);
         padding:5% 10% 0 10%;
-        font-size: 1rem;
+        font-size: clamp(.8rem, 8cqi, 1.8rem);
         -webkit-appearance: none;
             -moz-appearance: none;
             text-indent: 1px;
@@ -53,17 +54,17 @@
     background-color: white;
     .select-container {
         width: 100%;
-        border-bottom: solid #e1e1ec .5px;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         position: relative;
+        container-type: inline-size;
         p {
             color: $font-color;
             position: absolute;
             top: 10%;
             left: 10%;
-            font-size: 1rem;
+            font-size: clamp(.5rem, 6cqi, 1.5rem);
         }
         svg {
             position: absolute;
@@ -74,17 +75,17 @@
             margin: auto 0;
         }
         select {
-            padding:15% 10%;
+            padding:20% 10%;
             width: 100%;
             cursor: pointer;
             z-index: 1;
             background-color: transparent;
             border: none;
-            border-right: solid $grey 1px;
+            border-right: solid #e1e1ec .5px;
             font-family: roboto;
             font-weight: 500;
             color: rgb(83, 82, 88);;
-            font-size: 1rem;
+            font-size: clamp(.8rem, 8cqi, 1.8rem);
             -webkit-appearance: none;
             -moz-appearance: none;
             text-indent: 1px;

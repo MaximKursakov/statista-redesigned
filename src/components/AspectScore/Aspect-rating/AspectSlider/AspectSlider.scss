@@ -13,6 +13,6 @@
     }
     button, p {
         
-        font-size: 1cqi;
+        font-size: clamp(.8rem, 8cqi, 1.8rem);
     }
 }

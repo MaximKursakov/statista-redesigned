@@ -26,19 +26,6 @@ export const options = {
     pointHitRadius: 30,
     tension: 0,
     borderJoinStyle: "round",
-    plugins: {
-      legend: {
-        font: {
-          size: 12,
-          family: "Roboto"
-      },
-          display: false,
-        position: 'top',
-      },
-      title: {
-        display: false,
-      },
-    },
   };
 
   function randomize() {
